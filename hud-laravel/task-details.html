@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from seantheme.com/hud-laravel/page_product_details.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 19 Aug 2022 11:01:52 GMT -->
+
+<head>
+	<meta charset="utf-8" />
+	<title>HUD | Şöbə rəisi</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="" />
+	<meta name="author" content="" />
+
+	<link href="assets/css/vendor.min.css" rel="stylesheet" />
+  <link href="assets/css/app.min.css" rel="stylesheet" />
+
+
+  <link href="assets/plugins/tag-it/css/jquery.tagit.css" rel="stylesheet" />
+  <link href="assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" rel="stylesheet" />
+  <link href="assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
+  <link href="assets/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet" />
+  <link href="assets/plugins/bootstrap-slider/dist/css/bootstrap-slider.min.css" rel="stylesheet" />
+  <link href="assets/plugins/blueimp-file-upload/css/jquery.fileupload.css" rel="stylesheet" />
+  <link href="assets/plugins/summernote/dist/summernote-lite.css" rel="stylesheet" />
+  <link href="assets/plugins/spectrum-colorpicker2/dist/spectrum.min.css" rel="stylesheet" />
+  <link href="assets/plugins/select-picker/dist/picker.min.css" rel="stylesheet" />
+  <link href="assets/plugins/jquery-typeahead/dist/jquery.typeahead.min.css" rel="stylesheet" />
+  
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+</head>
+
+<body>
+
+	<div id="app" class="app">
+
+		<div id="header" class="app-header">
+
+			<div class="desktop-toggler">
+				<button type="button" class="menu-toggler" data-toggle-class="app-sidebar-collapsed"
+					data-dismiss-class="app-sidebar-toggled" data-toggle-target=".app">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</button>
+			</div>
+
+
+			<div class="mobile-toggler">
+				<button type="button" class="menu-toggler" data-toggle-class="app-sidebar-mobile-toggled"
+					data-toggle-target=".app">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</button>
+			</div>
+
+
+			<div class="brand">
+				<a href="#" class="brand-logo">
+					<span class="brand-img">
+						<span class="brand-img-text text-theme">H</span>
+					</span>
+					<span class="brand-text">HUD ADMIN <span style="font-size: 9px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    position: absolute;
+    opacity: .5;
+    top: 5px;
+    margin-left: -15px;">Laravel 8.x</span>
+				</a>
+			</div>
+
+
+			<div class="menu">
+				<div class="menu-item dropdown">
+					<a href="#" data-toggle-class="app-header-menu-search-toggled" data-toggle-target=".app"
+						class="menu-link">
+						<div class="menu-icon"><i class="bi bi-search nav-icon"></i></div>
+					</a>
+				</div>
+				<div class="menu-item dropdown dropdown-mobile-full">
+					<a href="#" data-bs-toggle="dropdown" data-bs-display="static" class="menu-link">
+						<div class="menu-icon"><i class="bi bi-grid-3x3-gap nav-icon"></i></div>
+					</a>
+					<div class="dropdown-menu fade dropdown-menu-end w-300px text-center p-0 mt-1">
+						<div class="row row-grid gx-0">
+							<div class="col-4">
+								<a href="email_inbox.html" class="dropdown-item text-decoration-none p-3 bg-none">
+									<div class="position-relative">
+										<i
+											class="bi bi-circle-fill position-absolute text-theme top-0 mt-n2 me-n2 fs-6px d-block text-center w-100"></i>
+										<i class="bi bi-envelope h2 opacity-5 d-block my-1"></i>
+									</div>
+									<div class="fw-500 fs-10px text-white">INBOX</div>
+								</a>
+							</div>
+							<div class="col-4">
+								<a href="pos_customer_order.html" target="_blank"
+									class="dropdown-item text-decoration-none p-3 bg-none">
+									<div><i class="bi bi-hdd-network h2 opacity-5 d-block my-1"></i></div>
+									<div class="fw-500 fs-10px text-white">POS SYSTEM</div>
+								</a>
+							</div>
+							<div class="col-4">
+								<a href="calendar.html" class="dropdown-item text-decoration-none p-3 bg-none">
+									<div><i class="bi bi-calendar4 h2 opacity-5 d-block my-1"></i></div>
+									<div class="fw-500 fs-10px text-white">CALENDAR</div>
+								</a>
+							</div>
+						</div>
+						<div class="row row-grid gx-0">
+							<div class="col-4">
+								<a href="helper.html" class="dropdown-item text-decoration-none p-3 bg-none">
+									<div><i class="bi bi-terminal h2 opacity-5 d-block my-1"></i></div>
+									<div class="fw-500 fs-10px text-white">HELPER</div>
+								</a>
+							</div>
+							<div class="col-4">
+								<a href="settings.html" class="dropdown-item text-decoration-none p-3 bg-none">
+									<div class="position-relative">
+										<i
+											class="bi bi-circle-fill position-absolute text-theme top-0 mt-n2 me-n2 fs-6px d-block text-center w-100"></i>
+										<i class="bi bi-sliders h2 opacity-5 d-block my-1"></i>
+									</div>
+									<div class="fw-500 fs-10px text-white">SETTINGS</div>
+								</a>
+							</div>
+							<div class="col-4">
+								<a href="widgets.html" class="dropdown-item text-decoration-none p-3 bg-none">
+									<div><i class="bi bi-collection-play h2 opacity-5 d-block my-1"></i></div>
+									<div class="fw-500 fs-10px text-white">WIDGETS</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="menu-item dropdown dropdown-mobile-full">
+					<a href="#" data-bs-toggle="dropdown" data-bs-display="static" class="menu-link">
+						<div class="menu-icon"><i class="bi bi-bell nav-icon"></i></div>
+						<div class="menu-badge bg-theme"></div>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end mt-1 w-300px fs-11px pt-1">
+						<h6 class="dropdown-header fs-10px mb-1">NOTIFICATIONS</h6>
+						<div class="dropdown-divider mt-1"></div>
+						<a href="#" class="d-flex align-items-center py-10px dropdown-item text-wrap">
+							<div class="fs-20px">
+								<i class="bi bi-bag text-theme"></i>
+							</div>
+							<div class="flex-1 flex-wrap ps-3">
+								<div class="mb-1 text-white">NEW ORDER RECEIVED ($1,299)</div>
+								<div class="small">JUST NOW</div>
+							</div>
+							<div class="ps-2 fs-16px">
+								<i class="bi bi-chevron-right"></i>
+							</div>
+						</a>
+						<a href="#" class="d-flex align-items-center py-10px dropdown-item text-wrap">
+							<div class="fs-20px w-20px">
+								<i class="bi bi-person-circle text-theme"></i>
+							</div>
+							<div class="flex-1 flex-wrap ps-3">
+								<div class="mb-1 text-white">3 NEW ACCOUNT CREATED</div>
+								<div class="small">2 MINUTES AGO</div>
+							</div>
+							<div class="ps-2 fs-16px">
+								<i class="bi bi-chevron-right"></i>
+							</div>
+						</a>
+						<a href="#" class="d-flex align-items-center py-10px dropdown-item text-wrap">
+							<div class="fs-20px w-20px">
+								<i class="bi bi-gear text-theme"></i>
+							</div>
+							<div class="flex-1 flex-wrap ps-3">
+								<div class="mb-1 text-white">SETUP COMPLETED</div>
+								<div class="small">3 MINUTES AGO</div>
+							</div>
+							<div class="ps-2 fs-16px">
+								<i class="bi bi-chevron-right"></i>
+							</div>
+						</a>
+						<a href="#" class="d-flex align-items-center py-10px dropdown-item text-wrap">
+							<div class="fs-20px w-20px">
+								<i class="bi bi-grid text-theme"></i>
+							</div>
+							<div class="flex-1 flex-wrap ps-3">
+								<div class="mb-1 text-white">WIDGET INSTALLATION DONE</div>
+								<div class="small">5 MINUTES AGO</div>
+							</div>
+							<div class="ps-2 fs-16px">
+								<i class="bi bi-chevron-right"></i>
+							</div>
+						</a>
+						<a href="#" class="d-flex align-items-center py-10px dropdown-item text-wrap">
+							<div class="fs-20px w-20px">
+								<i class="bi bi-credit-card text-theme"></i>
+							</div>
+							<div class="flex-1 flex-wrap ps-3">
+								<div class="mb-1 text-white">PAYMENT METHOD ENABLED</div>
+								<div class="small">10 MINUTES AGO</div>
+							</div>
+							<div class="ps-2 fs-16px">
+								<i class="bi bi-chevron-right"></i>
+							</div>
+						</a>
+						<hr class="bg-white-transparent-5 mb-0 mt-2" />
+						<div class="py-10px mb-n2 text-center">
+							<a href="#" class="text-decoration-none fw-bold">SEE ALL</a>
+						</div>
+					</div>
+				</div>
+				<div class="menu-item dropdown dropdown-mobile-full">
+					<a href="#" data-bs-toggle="dropdown" data-bs-display="static" class="menu-link">
+						<div class="menu-img online">
+							<img src="assets/img/user/profile.jpg" alt="Profile" height="60" />
+						</div>
+						<div class="menu-text d-sm-block d-none"><span class="__cf_email__"
+								data-cfemail="d3a6a0b6a1bdb2beb693b2b0b0bca6bda7fdb0bcbe">[email&#160;protected]</span>
+						</div>
+					</a>
+					<div class="dropdown-menu dropdown-menu-end me-lg-3 fs-11px mt-1">
+						<a class="dropdown-item d-flex align-items-center" href="profile.html">PROFILE <i
+								class="bi bi-person-circle ms-auto text-theme fs-16px my-n1"></i></a>
+						<a class="dropdown-item d-flex align-items-center" href="email_inbox.html">INBOX <i
+								class="bi bi-envelope ms-auto text-theme fs-16px my-n1"></i></a>
+						<a class="dropdown-item d-flex align-items-center" href="calendar.html">CALENDAR <i
+								class="bi bi-calendar ms-auto text-theme fs-16px my-n1"></i></a>
+						<a class="dropdown-item d-flex align-items-center" href="settings.html">SETTINGS <i
+								class="bi bi-gear ms-auto text-theme fs-16px my-n1"></i></a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item d-flex align-items-center" href="page_login.html">LOGOUT <i
+								class="bi bi-toggle-off ms-auto text-theme fs-16px my-n1"></i></a>
+					</div>
+				</div>
+			</div>
+
+
+			<form class="menu-search" method="POST" name="header_search_form">
+				<div class="menu-search-container">
+					<div class="menu-search-icon"><i class="bi bi-search"></i></div>
+					<div class="menu-search-input">
+						<input type="text" class="form-control form-control-lg" placeholder="Search menu..." />
+					</div>
+					<div class="menu-search-icon">
+						<a href="#" data-toggle-class="app-header-menu-search-toggled" data-toggle-target=".app"><i
+								class="bi bi-x-lg"></i></a>
+					</div>
+				</div>
+			</form>
+
+		</div>
+
+
+		<div id="sidebar" class="app-sidebar">
+
+			<div class="app-sidebar-content" data-scrollbar="true" data-height="100%">
+
+				<div class="menu">
+					<div class="menu-header">Əsas səhifələr</div>
+					<div class="menu-item">
+					  <a href="table_plugins.html" class="menu-link">
+						<span class="menu-icon"><i class="bi bi-cpu"></i></span>
+						<span class="menu-text">İşçilər cədvəli</span>
+					  </a>
+					</div>
+					<div class="menu-item">
+					  <a href="page_products.html" class="menu-link">
+						<span class="menu-icon"><i class="bi bi-collection"></i></span>
+						<span class="menu-text">Layihələr</span>
+					  </a>
+					</div>
+					<div class="menu-header">Digər səhifələr</div>
+					<div class="menu-item">
+					  <a href="page_product_details.html" class="menu-link">
+						<span class="menu-icon"><i class="bi bi-columns-gap"></i></span>
+						<span class="menu-text">Yeni layihə</span>
+					  </a>
+					</div>
+					<div class="menu-item">
+					  <a href="task-details.html" class="menu-link">
+						<span class="menu-icon"><i class="bi bi-pen"></i></span>
+						<span class="menu-text">Şöbə rəhbərinin yeni layihəsi</span>
+					  </a>
+					</div>
+					<div class="menu-item">
+					  <a href="task-işçi.html" class="menu-link">
+						<span class="menu-icon"><i class="bi bi-pen"></i></span>
+						<span class="menu-text">İşçilərin yeni layihəsi</span>
+					  </a>
+					</div>
+					<div class="menu-item">
+					  <a href="mesul-işçi-scrum-board.html" class="menu-link">
+						<span class="menu-icon"><i class="bi bi-bar-chart"></i></span>
+						<span class="menu-text">Məsul işçi</span>
+					  </a>
+					</div>
+					<div class="menu-item">
+					  <a href="email_compose.html" class="menu-link">
+						<span class="menu-icon"><i class="bi bi-gear"></i></span>
+						<span class="menu-text">Layihənin geri göndərilməsi</span>
+					  </a>
+					</div>
+					<div class="menu-item">
+					  <a href="page_register.html" class="menu-link">
+						<span class="menu-icon"><i class="bi bi-collection"></i></span>
+						<span class="menu-text">Qeydiyyat</span>
+					  </a>
+					</div>
+					<div class="menu-item">
+					  <a href="page_404_error.html" class="menu-link">
+						<span class="menu-icon"><i class="bi bi-collection"></i></span>
+						<span class="menu-text">404</span>
+					  </a>
+					</div>
+				  </div>
+			</div>
+
+		</div>
+
+
+		<button class="app-sidebar-mobile-backdrop" data-toggle-target=".app"
+			data-toggle-class="app-sidebar-mobile-toggled"></button>
+
+
+		<div id="content" class="app-content">
+			
+			<div class="d-flex align-items-center mb-3">
+				<div>
+					<!-- <ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="javascript:;">PAGES</a></li>
+						<li class="breadcrumb-item active">PRODUCT DETAILS</li>
+					</ol> -->
+					<h1 class="page-header mb-0">Layihə №1</h1>
+				</div>
+				<div class="mailbox">
+					<div class="mailbox-toolbar">
+						<div class="mailbox-toolbar-item"><a href="email_compose.html" class="mailbox-toolbar-link"><i class="fas fa-lg fa-fw me-2 fa-reply"></i>Cavablandır</a></div>
+						<div class="mailbox-toolbar-item"><a href="#" class="mailbox-toolbar-link"><i class="fas fa-lg fa-fw me-2 fa-check"></i>Qəbul et</a></div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row gx-4">
+				<div class="col-lg-12">
+
+				<div id="summernote" class="mb-5">
+					<div class="card mb-4">
+						<div class="card-header d-flex align-items-center bg-white bg-opacity-15 fw-400">
+							Layihə haqqında məlumat
+						</div>
+						<div class="card-body">
+							<div class="mb-3">
+								<label class="form-label">Adı</label>
+								<input type="text" class="form-control" name="title" placeholder="Product name" readonly>
+							</div>
+							<div class="mb-3">
+								<label class="form-label">Detallı təsvir</label>
+								<div class="form-control p-0">
+									<textarea contenteditable="false" class="form-control" rows="12" readonly></textarea>
+								</div>
+							</div>
+							
+						</div>
+						<div class="card-arrow">
+							<div class="card-arrow-top-left"></div>
+							<div class="card-arrow-top-right"></div>
+							<div class="card-arrow-bottom-left"></div>
+							<div class="card-arrow-bottom-right"></div>
+						</div>
+					</div>
+                </div>
+				
+				  <!-- <div class="modal fade" id="modalXl">
+					<div class="modal-dialog modal-xl">
+						<div class="modal-content">
+						  <div class="modal-header">
+							<h5 class="modal-title">MODAL TITLE</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+						  </div>
+						  <div class="modal-body" >
+							<div class="form-control p-0">
+								<textarea contenteditable="false" class="summernote form-control" rows="12"></textarea>
+							</div>
+						  </div>
+						  <div class="modal-footer">
+							<button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-outline-theme">Save changes</button>
+						  </div>
+						</div>
+					  </div>
+				  </div>
+				  <script>
+					function myFunction() {
+document.getElementById("demo").contentEditable = "true";
+}
+				</script>
+				<div id="modalSizes" class="mb-5">
+					<div class="card">
+					  <div class="card-body">
+  
+						<button type="button" class="btn btn-outline-theme me-2" data-bs-toggle="modal"
+						  data-bs-target="#modalXl" onclick="myFunction()">Extra large modal</button>
+						  <div class="modal fade" id="modalXl">
+							<div class="modal-dialog modal-xl">
+							  <div class="modal-content">
+								<div class="modal-header">
+								  <h5 class="modal-title">EXTRA LARGE MODAL</h5>
+								  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+								</div>
+								<div class="modal-body">
+								  ...
+								</div>
+							  </div>
+							</div>
+						  </div>
+					  </div>
+					  <div class="card-arrow">
+						<div class="card-arrow-top-left"></div>
+						<div class="card-arrow-top-right"></div>
+						<div class="card-arrow-bottom-left"></div>
+						<div class="card-arrow-bottom-right"></div>
+					  </div>
+					</div>
+				  </div> -->
+
+
+                <div id="selectPicker" class="mb-5">
+					<div class="card mb-4">
+						<div class="card-header mesul d-flex align-items-center bg-white bg-opacity-15 fw-400">
+							İşçilər və məsul şəxs
+						</div>
+						<div class="card-body" style="z-index: 9;">
+							<div class="col-xl-12">
+								<div class="mb-3">
+									<div id="selectPicker" class="mb-5">
+										<div class="card">
+										  <div class="card-body pb-2">
+											<form>
+											  <div class="row">
+												<div class="col-xl-3">
+												  <div class="mb-3">
+													<label class="form-label">İşçi <span class="text-danger">*</span></label>
+													<select class="selectpicker form-control" id="ex-search" multiple>
+													  <option value="r">Rüfət</option>
+													  <option value="k">Kamil</option>
+													  <option value="me">Mədinə</option>
+													  <option value="l">Leyla</option>
+													  <option value="mu">Murad</option>
+													  <option value="sa">Sahil</option>
+													  <option value="t">Tural</option>
+													  <option value="s">Sənan</option>
+													</select>
+												  </div>
+												</div>
+												
+												<!-- <div class="col-xl-6">
+												  <div class="mb-3">
+													<label class="form-label">Multiple SelectBox <span class="text-danger">*</span></label>
+													<select class="selectpicker form-control" id="ex-multiselect" multiple>
+													  <optgroup label="Picnic">
+														<option>Mustard</option>
+														<option>Ketchup</option>
+														<option>Relish</option>
+													  </optgroup>
+													  <optgroup label="Camping">
+														<option>Tent</option>
+														<option>Flashlight</option>
+														<option>Toilet Paper</option>
+													  </optgroup>
+													</select>
+												  </div>
+												</div> -->
+												<div class="col-xl-3">
+													<div class="mb-3">
+													  <label class="form-label">Məsul işçi <span class="text-danger">*</span></label>
+													  <select class="selectpicker form-control" id="ex-multiselect-limit-2" multiple>
+														<!-- <option value="null">--Null--</option> -->
+														<option value="r">Rüfət</option>
+														<option value="k">Kamil</option>
+														<option value="me">Mədinə</option>
+														<option value="l">Leyla</option>
+														<option value="mu">Murad</option>
+														<option value="sa">Sahil</option>
+														<option value="t">Tural</option>
+														<option value="s">Sənan</option>
+													  </select>
+													</div>
+												  </div>
+											  </div>
+											</form>
+										  </div>
+										  <div class="card-arrow">
+											<div class="card-arrow-top-left"></div>
+											<div class="card-arrow-top-right"></div>
+											<div class="card-arrow-bottom-left"></div>
+											<div class="card-arrow-bottom-right"></div>
+										  </div>
+										</div>
+									  </div>
+								</div>
+							  </div>
+						</div>
+						<div class="card-arrow">
+							<div class="card-arrow-top-left"></div>
+							<div class="card-arrow-top-right"></div>
+							<div class="card-arrow-bottom-left"></div>
+							<div class="card-arrow-bottom-right"></div>
+						</div>
+					</div>
+                </div>
+					
+					<!-- <div class="card mb-4">
+						<div class="card-header d-flex align-items-center bg-white bg-opacity-15 fw-400">
+							Media
+						</div>
+						<form id="fileupload" action="http://jquery-file-upload.appspot.com/" name="file_upload_form"
+							method="POST" enctype="multipart/form-data">
+							<div class="card-body pb-2">
+								<div class="fileupload-buttonbar mb-2">
+									<div class="d-block d-lg-flex align-items-center">
+										<span class="btn btn-outline-theme fileinput-button me-2 mb-1">
+											<i class="fa fa-fw fa-plus"></i>
+											<span>Add files...</span>
+											<input type="file" name="files[]" multiple>
+										</span>
+										<button type="submit" class="btn btn-outline-default me-2 mb-1 start">
+											<i class="fa fa-fw fa-upload"></i>
+											<span>Start upload</span>
+										</button>
+										<button type="reset" class="btn btn-outline-default me-2 mb-1 cancel">
+											<i class="fa fa-fw fa-ban"></i>
+											<span>Cancel upload</span>
+										</button>
+										<button type="button" class="btn btn-outline-default me-2 mb-1 delete">
+											<i class="fa fa-fw fa-trash"></i>
+											<span>Delete</span>
+										</button>
+										<div class="form-check ms-2 mb-1">
+											<input type="checkbox" id="toggle-delete" class="form-check-input toggle" />
+											<label for="toggle-delete" class="form-check-label">Select Files</label>
+										</div>
+									</div>
+								</div>
+								<div id="error-msg"></div>
+							</div>
+							<table class="table table-card mb-0 fs-13px">
+								<thead>
+									<tr class="fs-12px">
+										<th class="pt-2 pb-2 w-25">PREVIEW</th>
+										<th class="pt-2 pb-2 w-25">FILENAME</th>
+										<th class="pt-2 pb-2 w-25">SIZE</th>
+										<th class="pt-2 pb-2 w-25">ACTION</th>
+									</tr>
+								</thead>
+								<tbody class="files">
+									<tr class="empty-row">
+										<td colspan="4" class="text-center p-3">
+											<div class="text-gray-300 mb-2"><i class="fa fa-file-archive fa-3x"></i>
+											</div>
+											No file uploaded
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</form>
+						<div class="card-arrow">
+							<div class="card-arrow-top-left"></div>
+							<div class="card-arrow-top-right"></div>
+							<div class="card-arrow-bottom-left"></div>
+							<div class="card-arrow-bottom-right"></div>
+						</div>
+					</div> -->
+			
+					<div id="bootstrapDatepicker" class="mb-5">
+						<div class="card">
+						  <div class="card-body pb-2">
+							<form>
+							  <div class="row">
+								<div class="col-xl-4">
+								  <div class="mb-3">
+									<label class="form-label">İcra müddəti</label>
+									<!-- <div class="input-group input-daterange" id="datepicker-range">
+									  <input type="text" class="form-control" name="start" placeholder="başlama tarixi" />
+									  <span class="input-group-text">&</span>
+									  <input type="text" class="form-control" name="end" placeholder="bitmə tarixi" />
+									</div> -->
+									<div class="reportrange" readonly style="padding: 5px 10px; border: 1px solid #ccc;">
+										<i class="fa fa-calendar"></i>&nbsp;
+										<span></span>
+									</div>
+								  </div>
+								</div>
+							  </div>
+							</form>
+						  </div>
+						  <div class="card-arrow">
+							<div class="card-arrow-top-left"></div>
+							<div class="card-arrow-top-right"></div>
+							<div class="card-arrow-bottom-left"></div>
+							<div class="card-arrow-bottom-right"></div>
+						  </div>
+						</div>
+					  </div>
+					  
+
+					  <div id="radios" class="mb-5">
+						<div class="card">
+						  <div class="card-body">
+							<div class="row mb-n3">
+							  <label class="form-label">Dərəcəsi</label>
+							  <div class="col-xl-6">
+								
+								<div class="form-group mb-3">
+								  <div class="form-check form-check-inline">
+									<input class="form-check-input" name="default_radio" type="radio" id="inlineRadio1"
+									  value="option1" disabled />
+									<label class="form-check-label" for="inlineRadio1">asan</label>
+								  </div>
+								  <div class="form-check form-check-inline">
+									<input class="form-check-input" name="default_radio" type="radio" id="inlineRadio2"
+									  value="option2" checked disabled />
+									<label class="form-check-label" for="inlineRadio2">orta</label>
+								  </div>
+								  <div class="form-check form-check-inline">
+									<input class="form-check-input" name="default_radio" type="radio" id="inlineRadio3"
+									  value="option3" disabled />
+									<label class="form-check-label" for="inlineRadio3">çətin</label>
+								  </div>
+								</div>
+							  </div>
+							</div>
+						  </div>
+						  <div class="card-arrow">
+							<div class="card-arrow-top-left"></div>
+							<div class="card-arrow-top-right"></div>
+							<div class="card-arrow-bottom-left"></div>
+							<div class="card-arrow-bottom-right"></div>
+						  </div>
+						</div>
+					  </div>
+
+
+					<!-- <div class="card mb-4">
+						<div class="card-header d-flex align-items-center bg-white bg-opacity-15 fw-400">
+							Warranty
+						</div>
+						<div class="card-body">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="mb-lg-0 mb-3">
+										<label class="form-label">Warranty Type</label>
+										<select class="form-select" name="warranty_type_id">
+											<option value="">-- Select Warranty Type --</option>
+											<option value="1">No Warranty</option>
+											<option value="2">Local Supplier Warranty</option>
+											<option value="3">Local Manufacturer Warranty</option>
+											<option value="4">International Manufacturer Warranty</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="mb-lg-0 mb-3">
+										<label class="form-label">Warranty Period</label>
+										<select class="form-select" name="warranty_id">
+											<option value="">-- Select Warranty Period --</option>
+											<option value="1">1 Month</option>
+											<option value="2">3 Months</option>
+											<option value="3">6 Months</option>
+											<option value="4">1 Year</option>
+											<option value="5">2 Years</option>
+											<option value="6">3 Years</option>
+											<option value="7">4 Years</option>
+											<option value="8">5 Years</option>
+											<option value="9">6 Years</option>
+											<option value="10">7 Years</option>
+											<option value="11">8 Years</option>
+											<option value="12">9 Years</option>
+											<option value="13">10 Years</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-arrow">
+							<div class="card-arrow-top-left"></div>
+							<div class="card-arrow-top-right"></div>
+							<div class="card-arrow-bottom-left"></div>
+							<div class="card-arrow-bottom-right"></div>
+						</div>
+					</div> -->
+					<!-- <div class="card mb-4">
+						<div class="card-header d-flex align-items-center bg-white bg-opacity-15 fw-400">
+							Package Content
+						</div>
+						<div class="card-body">
+							<div class="mb-3">
+								<label class="form-label">What's in the box</label>
+								<input type="text" class="form-control" placeholder="e.g T-shirt"
+									name="package_content" />
+							</div>
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="mb-3">
+										<label class="form-label">Weight</label>
+										<input type="text" class="form-control" name="weight" placeholder="(kg)">
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="form-group">
+										<label class="form-label">Parcel Size</label>
+										<div class="row">
+											<div class="col-4">
+												<div class="input-group">
+													<span class="input-group-text">W</span>
+													<input type="text" class="form-control" placeholder="(cm)"
+														name="width" />
+												</div>
+											</div>
+											<div class="col-4">
+												<div class="input-group">
+													<span class="input-group-text">L</span>
+													<input type="text" class="form-control" placeholder="(cm)"
+														name="length" />
+												</div>
+											</div>
+											<div class="col-4">
+												<div class="input-group">
+													<span class="input-group-text">H</span>
+													<input type="text" class="form-control" placeholder="(cm)"
+														name="height" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="p-3 bg-white bg-opacity-10">
+								<div class="form-group mb-0">
+									<label class="form-label">Shipping</label>
+									<div class="shipping-container">
+										<hr class="mt-2 mb-2">
+										<div class="row align-items-center">
+											<div class="col-6 pt-1 pb-1">No shipping fee</div>
+											<div class="col-6 d-flex align-items-center">
+												<div class="form-check form-switch ms-auto">
+													<input type="checkbox" class="form-check-input" id="shippingFree"
+														name="shipping_free_enable" checked value="1" />
+													<label class="form-check-label" for="shippingFree">&nbsp;</label>
+												</div>
+											</div>
+										</div>
+										<hr class="mt-2 mb-2">
+										<div class="row align-items-center">
+											<div class="col-6 pt-1 pb-1">
+												AliExpress
+											</div>
+											<div class="col-6 d-flex align-items-center">
+												<div class="form-check form-switch ms-auto">
+													<input type="checkbox" class="form-check-input"
+														id="shippingAliExpress" name="shipping_enable"
+														value="AliExpress">
+													<label class="form-check-label"
+														for="shippingAliExpress">&nbsp;</label>
+												</div>
+											</div>
+										</div>
+										<hr class="mt-2 mb-2">
+										<div class="row align-items-center">
+											<div class="col-6 pt-1 pb-1">
+												SaleHoo
+											</div>
+											<div class="col-6 d-flex align-items-center">
+												<div class="form-check form-switch ms-auto">
+													<input type="checkbox" class="form-check-input" id="shippingSaleHoo"
+														name="shipping_enable" value="SaleHoo" />
+													<label class="form-check-label" for="shippingSaleHoo">&nbsp;</label>
+												</div>
+											</div>
+										</div>
+										<hr class="mt-2 mb-2">
+										<div class="row align-items-center">
+											<div class="col-6 pt-1 pb-1">
+												Megagoods
+											</div>
+											<div class="col-6 d-flex align-items-center">
+												<div class="form-check form-switch ms-auto">
+													<input type="checkbox" class="form-check-input"
+														id="shippingMegagoods" name="shipping_enable" value="Megagoods">
+													<label class="form-check-label"
+														for="shippingMegagoods">&nbsp;</label>
+												</div>
+											</div>
+										</div>
+										<hr class="mt-2 mb-2">
+										<div class="row align-items-center">
+											<div class="col-6 pt-1 pb-1">
+												Wholesale2B
+											</div>
+											<div class="col-6 d-flex align-items-center">
+												<div class="form-check form-switch ms-auto">
+													<input type="checkbox" class="form-check-input"
+														id="shippingWholesale2B" name="shipping_enable"
+														value="Wholesale2B" />
+													<label class="form-check-label"
+														for="shippingWholesale2B">&nbsp;</label>
+												</div>
+											</div>
+										</div>
+										<hr class="mt-2 mb-2">
+										<div class="row align-items-center">
+											<div class="col-6 pt-1 pb-1">
+												Sunrise Wholesale
+											</div>
+											<div class="col-6 d-flex align-items-center">
+												<div class="form-check form-switch ms-auto">
+													<input type="checkbox" class="form-check-input"
+														id="shippingSunriseWholesale" name="shipping_enable"
+														value="Sunrise Wholesale" />
+													<label class="form-check-label"
+														for="shippingSunriseWholesale">&nbsp;</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-arrow">
+							<div class="card-arrow-top-left"></div>
+							<div class="card-arrow-top-right"></div>
+							<div class="card-arrow-bottom-left"></div>
+							<div class="card-arrow-bottom-right"></div>
+						</div>
+					</div> -->
+				</div>
+				<!-- <div class="col-lg-4">
+					<div class="card mb-4">
+						<div class="card-header d-flex align-items-center fw-400 bg-white bg-opacity-15">
+							<div class="flex-1">
+								<div>Sales channels (2/3)</div>
+							</div>
+							<div><a href="#" class="text-decoration-none">Manage</a></div>
+						</div>
+						<div class="card-body">
+							<div class="d-flex">
+								<div class="flex-1 d-flex">
+									<div class="me-2"><i class="fa fa-store fa-lg fa-fw text-white text-opacity-50"></i>
+									</div>
+									<div>Online Store</div>
+									<span
+										class="badge bg-white bg-opacity-15 text-theme fw-bold fs-12px ms-auto me-2">2022-01-05</span>
+								</div>
+								<div class="w-50px text-center"><a href="#" class="text-decoration-none"><i
+											class="bi bi-calendar fa-lg"></i></a></div>
+							</div>
+							<hr />
+							<div class="d-flex">
+								<div class="flex-1 d-flex">
+									<div class="me-2"><i
+											class="fab fa-shopify fa-lg fa-fw text-white text-opacity-50"></i></div>
+									<div>Shopify</div>
+									<span
+										class="badge bg-white bg-opacity-15 text-theme fw-bold fs-12px ms-auto me-2">2022-01-05</span>
+								</div>
+								<div class="w-50px text-center"><a href="#" class="text-decoration-none"><i
+											class="bi bi-calendar fa-lg"></i></a></div>
+							</div>
+							<hr />
+							<div class="d-flex">
+								<div class="flex-1 d-flex">
+									<div class="me-2"><i
+											class="fab fa-amazon fa-lg fa-fw text-white text-opacity-50"></i></div>
+									<div>
+										<div>Amazon</div>
+										<div class="d-flex mt-1 text-white text-opacity-50 small">
+											<div><i class="fa fa-circle text-warning fs-6px d-block mt-2"></i></div>
+											<div class="flex-1 ps-2">
+												<div class="mb-2">
+													Amazon is disconnected. Connect your Amazon Seller Central account
+													to continue using this sales channel.
+												</div>
+												<a href="#">Learn more</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="w-50px text-center"><a href="#"
+										class="text-decoration-none text-white text-opacity-50"><i
+											class="bi bi-x-circle-fill fa-lg fa-fw"></i></a></div>
+							</div>
+						</div>
+						<div class="card-arrow">
+							<div class="card-arrow-top-left"></div>
+							<div class="card-arrow-top-right"></div>
+							<div class="card-arrow-bottom-left"></div>
+							<div class="card-arrow-bottom-right"></div>
+						</div>
+					</div>
+					<div class="card mb-4">
+						<div class="card-header d-flex align-items-center fw-400 bg-white bg-opacity-15">
+							<div class="flex-1">
+								<div>Organization</div>
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="mb-3">
+								<label class="form-label">Product type</label>
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Product type" />
+									<button class="btn btn-outline-secondary"><i class="fa fa-search"></i></button>
+								</div>
+							</div>
+							<div class="mb-0">
+								<label class="form-label">Vendor</label>
+								<div class="input-group">
+									<input type="text" class="form-control" placeholder="Apple store supplies" />
+									<button class="btn btn-outline-secondary"><i class="fa fa-search"></i></button>
+								</div>
+							</div>
+						</div>
+						<div class="card-arrow">
+							<div class="card-arrow-top-left"></div>
+							<div class="card-arrow-top-right"></div>
+							<div class="card-arrow-bottom-left"></div>
+							<div class="card-arrow-bottom-right"></div>
+						</div>
+					</div>
+					<div class="card mb-4">
+						<div class="card-header d-flex align-items-center fw-400 bg-white bg-opacity-15">
+							<div class="flex-1">
+								<div>Collections</div>
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="d-flex align-items-center position-relative fw-bold mb-2">
+								<span
+									class="position-absolute top-0 bottom-0 start-0 d-flex align-items-center px-10px"><i
+										class="fa fa-search"></i></span>
+								<input type="text" class="form-control ps-30px" placeholder="Search for collections" />
+							</div>
+							<p class="mb-0 small text-white text-opacity-50">
+								<i class="fa fa-question-circle fa-fw"></i> Add this product to a collection so it's
+								easy to find in your store.
+							</p>
+						</div>
+						<div class="card-arrow">
+							<div class="card-arrow-top-left"></div>
+							<div class="card-arrow-top-right"></div>
+							<div class="card-arrow-bottom-left"></div>
+							<div class="card-arrow-bottom-right"></div>
+						</div>
+					</div>
+					<div class="card mb-4">
+						<div class="card-header d-flex align-items-center fw-400 bg-white bg-opacity-15">
+							<div class="flex-1">
+								<div>Tags</div>
+							</div>
+						</div>
+						<div class="card-body">
+							<ul id="tags" class="tagit form-control mb-3">
+								<li>Laptop</li>
+								<li>Apple</li>
+							</ul>
+							<div class="small"><a href="#">View all tags</a></div>
+						</div>
+						<div class="card-arrow">
+							<div class="card-arrow-top-left"></div>
+							<div class="card-arrow-top-right"></div>
+							<div class="card-arrow-bottom-left"></div>
+							<div class="card-arrow-bottom-right"></div>
+						</div>
+					</div>
+				</div> -->
+			</div>
+		</div>
+
+
+		<a href="#" data-toggle="scroll-to-top" class="btn-scroll-top fade"><i class="fa fa-arrow-up"></i></a>
+		<div class="app-theme-panel">
+			<div class="app-theme-panel-container">
+			  <a href="javascript:;" data-toggle="theme-panel-expand" class="app-theme-toggle-btn"><i
+				  class="bi bi-sliders"></i></a>
+			  <div class="app-theme-panel-content">
+				<div class="small fw-bold text-white mb-1">Theme Color</div>
+				<div class="card mb-3">
+	  
+				  <div class="card-body p-2">
+	  
+					<div class="app-theme-list">
+					  <div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-pink"
+						  data-theme-class="theme-pink" data-toggle="theme-selector" data-bs-toggle="tooltip"
+						  data-bs-trigger="hover" data-bs-container="body" data-bs-title="Pink">&nbsp;</a></div>
+					  <div class="app-theme-list-item active"><a href="javascript:;" class="app-theme-list-link bg-red"
+						  data-theme-class="theme-red" data-toggle="theme-selector" data-bs-toggle="tooltip"
+						  data-bs-trigger="hover" data-bs-container="body" data-bs-title="Default">&nbsp;</a></div>
+					  <div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-warning"
+						  data-theme-class="theme-warning" data-toggle="theme-selector" data-bs-toggle="tooltip"
+						  data-bs-trigger="hover" data-bs-container="body" data-bs-title="Orange">&nbsp;</a></div>
+					  <div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-yellow"
+						  data-theme-class="theme-yellow" data-toggle="theme-selector" data-bs-toggle="tooltip"
+						  data-bs-trigger="hover" data-bs-container="body" data-bs-title="Yellow">&nbsp;</a></div>
+					  <div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-lime"
+						  data-theme-class="theme-lime" data-toggle="theme-selector" data-bs-toggle="tooltip"
+						  data-bs-trigger="hover" data-bs-container="body" data-bs-title="Lime">&nbsp;</a></div>
+					  <div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-green"
+						  data-theme-class="theme-green" data-toggle="theme-selector" data-bs-toggle="tooltip"
+						  data-bs-trigger="hover" data-bs-container="body" data-bs-title="Green">&nbsp;</a></div>
+					  <div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-teal"
+						  data-theme-class="theme-teal" data-toggle="theme-selector" data-bs-toggle="tooltip"
+						  data-bs-trigger="hover" data-bs-container="body" data-bs-title="Teal">&nbsp;</a></div>
+					  <div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-info"
+						  data-theme-class="theme-info" data-toggle="theme-selector" data-bs-toggle="tooltip"
+						  data-bs-trigger="hover" data-bs-container="body" data-bs-title="Cyan">&nbsp;</a></div>
+					  <div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-primary"
+						  data-theme-class="theme-primary" data-toggle="theme-selector" data-bs-toggle="tooltip"
+						  data-bs-trigger="hover" data-bs-container="body" data-bs-title="Blue">&nbsp;</a></div>
+					  <div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-purple"
+						  data-theme-class="theme-purple" data-toggle="theme-selector" data-bs-toggle="tooltip"
+						  data-bs-trigger="hover" data-bs-container="body" data-bs-title="Purple">&nbsp;</a></div>
+					  <div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-indigo"
+						  data-theme-class="theme-indigo" data-toggle="theme-selector" data-bs-toggle="tooltip"
+						  data-bs-trigger="hover" data-bs-container="body" data-bs-title="Indigo">&nbsp;</a></div>
+					  <div class="app-theme-list-item"><a href="javascript:;" class="app-theme-list-link bg-gray-100"
+						  data-theme-class="theme-gray-200" data-toggle="theme-selector" data-bs-toggle="tooltip"
+						  data-bs-trigger="hover" data-bs-container="body" data-bs-title="Gray">&nbsp;</a></div>
+					</div>
+	  
+				  </div>
+	  
+	  
+				  <div class="card-arrow">
+					<div class="card-arrow-top-left"></div>
+					<div class="card-arrow-top-right"></div>
+					<div class="card-arrow-bottom-left"></div>
+					<div class="card-arrow-bottom-right"></div>
+				  </div>
+	  
+				</div>
+				<div class="small fw-bold text-white mb-1">Theme Cover</div>
+				<div class="card">
+	  
+				  <div class="card-body p-2">
+	  
+					<div class="app-theme-cover">
+					  <div class="app-theme-cover-item active">
+						<a href="javascript:;" class="app-theme-cover-link"
+						  style="background-image: url(assets/img/cover/cover-thumb-1.jpg);" data-theme-cover-class=""
+						  data-toggle="theme-cover-selector" data-bs-toggle="tooltip" data-bs-trigger="hover"
+						  data-bs-container="body" data-bs-title="Default">&nbsp;</a>
+					  </div>
+					  <div class="app-theme-cover-item">
+						<a href="javascript:;" class="app-theme-cover-link"
+						  style="background-image: url(assets/img/cover/cover-thumb-2.jpg);"
+						  data-theme-cover-class="bg-cover-2" data-toggle="theme-cover-selector" data-bs-toggle="tooltip"
+						  data-bs-trigger="hover" data-bs-container="body" data-bs-title="Cover 2">&nbsp;</a>
+					  </div>
+					  <div class="app-theme-cover-item">
+						<a href="javascript:;" class="app-theme-cover-link"
+						  style="background-image: url(assets/img/cover/cover-thumb-3.jpg);"
+						  data-theme-cover-class="bg-cover-3" data-toggle="theme-cover-selector" data-bs-toggle="tooltip"
+						  data-bs-trigger="hover" data-bs-container="body" data-bs-title="Cover 3">&nbsp;</a>
+					  </div>
+					  <div class="app-theme-cover-item">
+						<a href="javascript:;" class="app-theme-cover-link"
+						  style="background-image: url(assets/img/cover/cover-thumb-4.jpg);"
+						  data-theme-cover-class="bg-cover-4" data-toggle="theme-cover-selector" data-bs-toggle="tooltip"
+						  data-bs-trigger="hover" data-bs-container="body" data-bs-title="Cover 4">&nbsp;</a>
+					  </div>
+					  <div class="app-theme-cover-item">
+						<a href="javascript:;" class="app-theme-cover-link"
+						  style="background-image: url(assets/img/cover/cover-thumb-5.jpg);"
+						  data-theme-cover-class="bg-cover-5" data-toggle="theme-cover-selector" data-bs-toggle="tooltip"
+						  data-bs-trigger="hover" data-bs-container="body" data-bs-title="Cover 5">&nbsp;</a>
+					  </div>
+					</div>
+	  
+				  </div>
+	  
+	  
+				  <div class="card-arrow">
+					<div class="card-arrow-top-left"></div>
+					<div class="card-arrow-top-right"></div>
+					<div class="card-arrow-bottom-left"></div>
+					<div class="card-arrow-bottom-right"></div>
+				  </div>
+	  
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+	</div>
+
+
+	<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script id="template-upload" type="text/x-tmpl">
+    {% for (var i=0, file; file=o.files[i]; i++) { %}
+		<tr class="template-upload">
+			<td>
+				<span class="preview d-flex justify-content-center flex-align-center" style="height: 80px"></span>
+			</td>
+			<td>
+				<p class="name mb-1">{%=file.name%}</p>
+				<strong class="error text-danger"></strong>
+			</td>
+			<td>
+				<p class="size mb-2">Processing...</p>
+				<div class="progress progress-sm mb-0 h-10px progress-striped active"><div class="progress-bar bg-theme" style="min-width: 2em; width:0%;"></div></div>
+			</td>
+			<td nowrap>
+				{% if (!i && !o.options.autoUpload) { %}
+					<button class="btn btn-outline-theme btn-sm d-block w-100 start" disabled>
+						<span>Start</span>
+					</button>
+				{% } %}
+				{% if (!i) { %}
+					<button class="btn btn-outline-default btn-sm d-block w-100 cancel mt-2">
+						<span>Cancel</span>
+					</button>
+				{% } %}
+			</td>
+		</tr>
+	{% } %}
+	</script>
+
+
+  <script id="template-download" type="text/x-tmpl">
+    {% for (var i=0, file; file=o.files[i]; i++) { %}
+		<tr class="template-download">
+			<td>
+				<span class="preview d-flex justify-content-center flex-align-center" style="height: 80px">
+					{% if (file.thumbnailUrl) { %}
+						<a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" data-gallery><img src="{%=file.thumbnailUrl%}"></a>
+					{% } %}
+				</span>
+			</td>
+			<td>
+				<p class="name">
+					{% if (file.url) { %}
+						<a href="{%=file.url%}" title="{%=file.name%}" download="{%=file.name%}" {%=file.thumbnailUrl?'data-gallery':''%}>{%=file.name%}</a>
+					{% } else { %}
+						<span>{%=file.name%}</span>
+					{% } %}
+				</p>
+				{% if (file.error) { %}
+					<div><span class="label label-danger">Error</span> {%=file.error%}</div>
+				{% } %}
+			</td>
+			<td>
+				<span class="size">{%=o.formatFileSize(file.size)%}</span>
+			</td>
+			<td nowrap>
+				{% if (file.deleteUrl) { %}
+					<button class="btn btn-outline-danger btn-sm btn-block delete" data-type="{%=file.deleteType%}" data-url="{%=file.deleteUrl%}"{% if (file.deleteWithCredentials) { %} data-xhr-fields='{"withCredentials":true}'{% } %}>
+						<span>Delete</span>
+					</button>
+					<div class="form-check mt-2">
+						<input type="checkbox" id="{%=file.deleteUrl%}" name="delete" value="1" class="form-check-input toggle" />
+						<label for="{%=file.deleteUrl%}" class="form-check-label"></label>
+					</div>
+				{% } else { %}
+					<button class="btn btn-outline-default btn-sm d-block w-100 cancel">
+						<span>Cancel</span>
+					</button>
+				{% } %}
+			</td>
+		</tr>
+	{% } %}
+	</script>
+
+
+  <script src="assets/js/vendor.min.js" type="9eece69f7530fa4439e972dd-text/javascript"></script>
+  <script src="assets/js/app.min.js" type="9eece69f7530fa4439e972dd-text/javascript"></script>
+
+
+  <script src="assets/plugins/jquery-migrate/dist/jquery-migrate.min.js"
+    type="9eece69f7530fa4439e972dd-text/javascript"></script>
+  <script src="assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"
+    type="9eece69f7530fa4439e972dd-text/javascript"></script>
+  <script src="assets/plugins/moment/min/moment.min.js" type="9eece69f7530fa4439e972dd-text/javascript"></script>
+  <script src="assets/plugins/bootstrap-daterangepicker/daterangepicker.js"
+    type="9eece69f7530fa4439e972dd-text/javascript"></script>
+  <script src="assets/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js"
+    type="9eece69f7530fa4439e972dd-text/javascript"></script>
+  <script src="assets/plugins/bootstrap-slider/dist/bootstrap-slider.min.js"
+    type="9eece69f7530fa4439e972dd-text/javascript"></script>
+  <script src="assets/plugins/jquery-typeahead/dist/jquery.typeahead.min.js"
+    type="9eece69f7530fa4439e972dd-text/javascript"></script>
+  <script src="assets/plugins/jquery.maskedinput/src/jquery.maskedinput.js"
+    type="9eece69f7530fa4439e972dd-text/javascript"></script>
+  <script src="assets/plugins/tag-it/js/tag-it.min.js" type="9eece69f7530fa4439e972dd-text/javascript"></script>
+  <script src="assets/plugins/blueimp-file-upload/js/vendor/jquery.ui.widget.js"
+    type="9eece69f7530fa4439e972dd-text/javascript"></script>
+  <script src="assets/plugins/blueimp-tmpl/js/tmpl.min.js" type="9eece69f7530fa4439e972dd-text/javascript"></script>
+  <script src="assets/plugins/blueimp-load-image/js/load-image.all.min.js"
+    type="9eece69f7530fa4439e972dd-text/javascript"></script>
+  <script src="assets/plugins/blueimp-canvas-to-blob/js/canvas-to-blob.min.js"
+    type="9eece69f7530fa4439e972dd-text/javascript"></script>
+  <script src="assets/plugins/blueimp-gallery/js/jquery.blueimp-gallery.min.js"
+    type="9eece69f7530fa4439e972dd-text/javascript"></script>
+  <script src="assets/plugins/blueimp-file-upload/js/jquery.iframe-transport.js"
+    type="9eece69f7530fa4439e972dd-text/javascript"></script>
+  <script src="assets/plugins/blueimp-file-upload/js/jquery.fileupload.js"
+    type="9eece69f7530fa4439e972dd-text/javascript"></script>
+  <script src="assets/plugins/blueimp-file-upload/js/jquery.fileupload-process.js"
+    type="9eece69f7530fa4439e972dd-text/javascript"></script>
+  <script src="assets/plugins/blueimp-file-upload/js/jquery.fileupload-image.js"
+    type="9eece69f7530fa4439e972dd-text/javascript"></script>
+  <script src="assets/plugins/blueimp-file-upload/js/jquery.fileupload-audio.js"
+    type="9eece69f7530fa4439e972dd-text/javascript"></script>
+  <script src="assets/plugins/blueimp-file-upload/js/jquery.fileupload-video.js"
+    type="9eece69f7530fa4439e972dd-text/javascript"></script>
+  <script src="assets/plugins/blueimp-file-upload/js/jquery.fileupload-validate.js"
+    type="9eece69f7530fa4439e972dd-text/javascript"></script>
+  <script src="assets/plugins/blueimp-file-upload/js/jquery.fileupload-ui.js"
+    type="9eece69f7530fa4439e972dd-text/javascript"></script>
+  <script src="assets/plugins/summernote/dist/summernote-lite.min.js" type="9eece69f7530fa4439e972dd-text/javascript">
+  </script>
+  <script src="assets/plugins/spectrum-colorpicker2/dist/spectrum.min.js"
+    type="9eece69f7530fa4439e972dd-text/javascript"></script>
+  <script src="assets/plugins/select-picker/dist/picker.min.js" type="9eece69f7530fa4439e972dd-text/javascript">
+  </script>
+  <script src="assets/plugins/%40highlightjs/cdn-assets/highlight.min.js"
+    type="9eece69f7530fa4439e972dd-text/javascript"></script>
+  <script src="assets/js/demo/highlightjs.demo.js" type="9eece69f7530fa4439e972dd-text/javascript"></script>
+  <script src="assets/js/demo/form-plugins.demo.js" type="9eece69f7530fa4439e972dd-text/javascript"></script>
+  <script src="assets/js/demo/sidebar-scrollspy.demo.js" type="9eece69f7530fa4439e972dd-text/javascript"></script>
+
+  <script type="9eece69f7530fa4439e972dd-text/javascript">
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '../../www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-53034621-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script src="../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
+    data-cf-settings="9eece69f7530fa4439e972dd-|49" defer=""></script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194"
+    integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw=="
+    data-cf-beacon='{"rayId":"73d260e0f97e9dd2","version":"2022.8.0","r":1,"token":"4db8c6ef997743fda032d4f73cfeff63","si":100}'
+    crossorigin="anonymous"></script>
+	<script src="assets/js/demo/ui-modal-notification.demo.js" type="fe875dc77ed399aeac57cc71-text/javascript"></script>
+
+</body>
+
+<!-- Mirrored from seantheme.com/hud-laravel/page_product_details.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 19 Aug 2022 11:02:04 GMT -->
+
+</html>
